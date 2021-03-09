@@ -1,0 +1,43 @@
+/* BACKGROUND SPECS. MODIFYING MAY BREAK THINGS */
+
+/* destroys the white lines at the edges of the page */
+* {
+	margin: 0;
+	padding: 0;
+	}
+
+/* div class for the page background */
+.space0 {
+  z-index: -1;
+  background-image: url('radial_blur_gray.png');
+  
+  /* because the width of the background image is percentage, 
+    it will shrink or embiggen, unlike the spinning disc*/
+  width: 100%;
+  height: 100%;
+  
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: fixed;
+  }
+  
+  /* rotating middle part specs */
+  .space1 {
+  /* 800px both, because that was the cutout dimensions in photoshop.
+    Setting this to a percentage will cut the image in an interesting fashion  */
+  width: 800px;
+  height: 800px;
+  
+  background-image: url('radial_blur_gray_mid.png');
+  background-repeat: no-repeat;
+  position: fixed;
+  background-position: center;
+  }
+  
+  /* put inside the space0 class to make the spinning image centered. the middle part is cut out of the original background image. Can also be re-used for centering other elements */
+  .space_center {        
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }

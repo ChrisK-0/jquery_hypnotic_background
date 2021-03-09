@@ -1,0 +1,55 @@
+/* TEXT SPECS */
+
+/* font file search */
+@font-face {
+	font-family: ReggaeOne;
+	src: url(font.ttf);
+	}
+	
+	.h1_dark {
+	color: #fff;
+	padding-top: 200px;
+	font-style: italic;
+	text-shadow: 2px 2px 5px #fff;
+	}
+	
+	.span_dark {
+	color: rgb(102, 102, 102);
+	font-style: italic;
+	text-shadow: 2px 2px 10px red;
+	}
+	
+	.main_info > p {
+	font-size: 20px;
+	text-shadow: 2px 2px 5px #fff;
+	}
+	
+	/* centers paragraphs or other text elements by adding this class to parent div */
+	.text_center {
+	margin: auto;
+	width: 50%;
+	text-align: center;
+	font-family: ReggaeOne;
+	}
+	
+	/* BUTTON SPECS */
+	
+	.fun_ > button {
+		margin-top: 100px;
+		padding: 5px;
+		text-shadow: 2px 2px red;
+		background-color: #000;
+		color: #fff;
+		border: 2px solid red;
+		border-radius: 15%;
+	}
+
+	.goto_darkzone > button {
+		margin-top: 50px;
+		padding: 5px;
+		text-shadow: 2px 2px rgb(255, 153, 0);
+		background-color: #000;
+		color: #fff;
+		border: 2px solid rgb(255, 153, 0);
+		border-radius: 5%;
+	}
